@@ -115,7 +115,7 @@ var legend = L.control({position: 'bottomright'});
 
 legend.onAdd = function (map) {
     var div = L.DomUtil.create('div', 'info legend'),
-        grades = ["A", "B", "C", "D", "미정"];
+        grades = ["A", "B", "C", "D", "E"];
 
     div.innerHTML += '<h4>평가 등급 범례</h4>';
     
@@ -185,4 +185,5 @@ function createRiverDataTable(data) {
 }
 
 // 함수 호출: 데이터 로딩 완료 후 테이블 생성
+
 createRiverDataTable(riverData);
